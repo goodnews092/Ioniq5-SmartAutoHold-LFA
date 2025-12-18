@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>오토홀드(LFA메모리) 컨트롤러 설치 (C3)</title>
+    <title>오토홀드(LFA메모리) 컨트롤러 설치 (ESP32-C3 SUPERMINI)</title>
     <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
 </head>
 <body style="text-align:center; padding-top:50px; font-family: sans-serif;">
@@ -15,9 +15,21 @@
         <p>3. 아래 <b>[CONNECT]</b> 버튼을 누르고 포트(COM...)를 선택하세요.</p>
         <p>4. <b>[INSTALL]</b>을 눌러 설치를 시작하세요.</p>
     </div>
+
+    <div style="margin-top: 20px; font-size: 0.9em; color: #555;">
+        <p><b>💡 연결이 안 되나요?</b></p>
+        <ul style="text-align: left; display: inline-block; margin: 0; padding-left: 20px;">
+            <li>윈도우 10/11 환경을 권장합니다. (대부분 자동 인식)</li>
+            <li>데이터 케이블인지 확인하세요. (다이소 충전 전용 X)</li>
+            <li>
+                그래도 포트가 안 뜬다면 
+                <a href="https://www.wch-ic.com/downloads/CH341SER_EXE.html" target="_blank" style="color: blue; text-decoration: underline;">CH340 드라이버</a>
+                를 설치해 보세요.
+            </li>
+        </ul>
+    </div>
     <br><br>
 
     <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
 </body>
-
 </html>
