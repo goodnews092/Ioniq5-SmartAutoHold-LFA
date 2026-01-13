@@ -1,36 +1,35 @@
-<! DOCTYPE html>
-HTML 랑 =>"코"
->머리<
-    메타< 샤르셋 =>"UTF-8"
-    >제목< 오토홀드 컨트롤러 설치 (ESP32-C3 SUPERMINI)</</title
-    대본< 유형 ="모듈" SRC ="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module">"https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"script>
->머리</
-몸< 스타일 =텍스트 정렬" :센터 ; 패딩탑 :PX50 ; 폰트 패밀리 : 산세리프sans-serif>
-    >H1< 오토홀드(LFA메모리) 펌웨어 설치 (ESP32-C3 SUPERMINI)</h1</
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>오토홀드 도우미 설치 (C3)</title>
+    <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+</head>
+<body style="text-align:center; padding-top:50px; font-family: sans-serif;">
+    <h1>오토홀드 펌웨어 설치 (ESP32-C3 SUPERMINI)</h1>
 
-    디브< 스타일 =배경색" : #f0f0f0; 패딩 : PX20 ;전시 : 라인 블록 ; 텍스트 정렬 : 왼쪽 ; 국경 반지름 : 10px;">
-        >H3< ⚠️ 설치 전 필독 (연결 방법)>H3</
-        >p< 1. 기기의 >b< 9번(BOOT) 버튼을 누른 상태>b</ 로 USB를 컴퓨터에 꽂으세요.</</p
-        >p< 2. USB를 꽂고 1초 뒤에 버튼에서 손을 떼세요.>p</
-        >p< 3. 아래 >b< [CONNECT]>b</  버튼을 누르고 포트(COM...)를 선택하세요.</</p
-        >p< 4.>b< [INSTALL]>b</ 을 눌러 설치를 시작하세요.>p</
-    >디브</
+    <div style="background-color: #f0f0f0; padding: 20px; display: inline-block; text-align: left; border-radius: 10px;">
+        <h3>⚠️ 설치 전 필독 (연결 방법)</h3>
+        <p>1. 기기의 <b>9번(BOOT) 버튼을 누른 상태</b>로 USB를 컴퓨터에 꽂으세요.</p>
+        <p>2. USB를 꽂고 1초 뒤에 버튼에서 손을 떼세요.</p>
+        <p>3. 아래 <b>[CONNECT]</b> 버튼을 누르고 포트(COM...)를 선택하세요.</p>
+        <p>4. <b>[INSTALL]</b>을 눌러 설치를 시작하세요.</p>
+    </div>
 
-    디브< 스타일 =여백 상단" : PX20 ; 글꼴 크기 : 엠0.9 ; : #555;": #555;">
-        b<><>> 💡 연결이 안 되나요?p</>b>>
-        울< 스타일 =텍스트 정렬" : 왼쪽 ;전시 : 인라인 블록 ; 여백 : 0 ; 패딩 왼쪽 : 2020px>
-            >리< 윈도우 10/11 환경을 권장합니다. (대부분 자동 인식)>리</
-            >리< 데이터 케이블인지 확인하세요. (다이소 충전 전용 X)>리</
-            >리<
+    <div style="margin-top: 20px; font-size: 0.9em; color: #555;">
+        <p><b>💡 연결이 안 되나요?</b></p>
+        <ul style="text-align: left; display: inline-block; margin: 0; padding-left: 20px;">
+            <li>윈도우 10/11 환경을 권장합니다. (대부분 자동 인식)</li>
+            <li>데이터 케이블인지 확인하세요. (다이소 충전 전용 X)</li>
+            <li>
                 그래도 포트가 안 뜬다면 
-                에이< 흐레프 ="https://www.wch-ic.com/downloads/CH341SER_EXE.html"  목표 ="_blank"  스타일 ="" : 블루 ; 텍스트 장식 : 밑줄underline> CH340 드라이버</</a
+                <a href="https://www.wch-ic.com/downloads/CH341SER_EXE.html" target="_blank" style="color: blue; text-decoration: underline;">CH340 드라이버</a>
                 를 설치해 보세요.
-            >리</
-        >울</
-    >디브</
-    브르<<>br>
+            </li>
+        </ul>
+    </div>
+    <br><br>
 
-    ESP-웹-설치 버튼< 명세서 ="manifest.json"ESP-웹-설치 버튼"manifest.json"esp-web-install-button>
->몸</
->HTML</
-
+    <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+</body>
+</html>
